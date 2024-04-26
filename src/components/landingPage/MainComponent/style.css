@@ -1,0 +1,117 @@
+.flex-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 3rem;
+    height: 105vh;
+}
+.left-component{
+    width: 60%;
+}
+
+.track-crypto-heading , .real-time-heading{
+    font-size: 6.5rem;
+    margin: 0;
+}
+
+.track-crypto-heading{
+    -webkit-text-stroke-color: var(--white);
+    -webkit-text-stroke-width: 3px;
+    color: var(white);
+}
+
+.track-crypto-heading:hover{
+    -webkit-text-stroke-color: var(--white);
+    color: var(--black);
+    transition: all 0.3s;
+}
+
+.real-time-heading{
+    color: var(--blue);
+}
+
+.info-text{
+    font-size: 1rem;
+    color: var(--gray);
+    margin-top: 2rem;
+}
+
+.btn-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+.phone-container{
+    width: 40%;
+    position: relative;
+}
+.phone{
+    position: absolute;
+    z-index: 10;
+    min-width: 300px;
+    width: 50%;
+    right: 0;
+}
+.gradiant{
+    position: absolute;
+    min-width: 250px;
+    width: 40%;
+    top: 3rem;
+    right: 0;
+}
+
+@media screen and (max-width : 1250px){
+   .track-crypto-heading , .real-time-heading{
+    font-size: 5rem;
+    margin: 0;
+   }  
+}
+
+@media screen and (max-width : 1000px){
+    .phone{
+        min-width: 250px;
+        width: 50%;
+    }
+    .gradiant{
+        min-width: 200px;
+        width: 40%;
+        top: 3rem;
+    }
+ }
+
+ @media screen and (max-width : 800px){
+     .flex-info{
+        flex-direction: column;
+        justify-content: center;
+     }
+     .left-component{
+        width: 100%;
+     }
+     .phone-container{
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 3rem;
+     }
+     .phone{
+        left: 15%;
+     }
+     .gradiant{
+        left: 25%;
+     }
+     .track-crypto-heading , .real-time-heading{
+         text-align: center;
+         font-size: 3rem;
+       } 
+    .info-text{
+        text-align: center;
+    }
+    .btn-flex{
+        justify-content: center;
+    }
+    .track-crypto-heading{
+        -webkit-text-stroke-width: 1px;
+    }
+ }
