@@ -4,6 +4,7 @@ import Button from "../../Common/Button";
 import phone from "../../../assets/phone 1.png";
 import gradiant from "../../../assets/gradient 1.png";
 import {motion} from "framer-motion";
+import { Link } from "react-router-dom";
 
 const MainComponent = () => {
     return (
@@ -31,8 +32,11 @@ const MainComponent = () => {
                 animate={{opacity:1 , x:0}}
                 transition={{duration: 0.5 , delay: 1.5}}
                 >
-                   <Button text={"Dashbord"}/>
-                   <Button text={"Share App"} outline={true}/>
+                   <Link to="/dashbord">
+                    <Button text="Dashbord"
+                            onClick={()=>console.log('btn clicked')}/>
+                   </Link>
+                   <Button text={"Share App"} outline={true} onClick={()=>console.log("sahre")}/>
                 </motion.div>
             </div>
             <div className="phone-container">

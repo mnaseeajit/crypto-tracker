@@ -1,18 +1,5 @@
-// import React from "react";
-// import Header from "../Common/Header";
-
-// const WatchListPage = () => {
-//     return (
-//         <div>
-//             <Header />
-//         </div>
-//     )
-// }
-
-// export default WatchListPage;
 
 import React, { useState, useEffect } from "react";
-import Header from "../Common/Header";
 import TabsComponet from "../Dashbord/tabs";
 
 const WatchListPage = () => {
